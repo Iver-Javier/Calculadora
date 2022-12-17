@@ -46,19 +46,22 @@
 		</style>
 		
 	</head>
-
-
+	
 	<body class="single">
 
+	<header>
+        <nav>
+            <a href="Catalogo.html">Catalogo de pinturas disponibles</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Cálcula el rendimiento de tu pintura</h1>
+            <h2>Seleccionando algunas de nuestras pinturas disponibles</h2>
+        </section>
+    
+    </header>
 		<div style="background-color:goldenrod; height:10px;"></div>
 		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Header -->
-				<header id="header">
-					
-					
-				</header>
 
 				<!-- Menu -->
 					
@@ -180,6 +183,8 @@
 								<tr>									
 									<td><strong>Cantidad de agua para Brocha (litros):</strong></td>
 									<td><input id="result1" pattern="^\d*(\.\d{0,2})?$" readonly="" placeholder="0.0"></td>
+								</tr>
+								<tr>
 									<td><strong>Cantidad de agua para Arless ó Soplete (litros):</strong></td>
 									<td><input id="result2" pattern="^\d*(\.\d{0,2})?$" readonly="" placeholder="0.0"></td>
 									<td></td>
@@ -198,28 +203,7 @@
 			<script src="./Calculadora _ Asistencia _ Grupo Sur_files/breakpoints.min.js.descarga"></script>
 			<script src="./Calculadora _ Asistencia _ Grupo Sur_files/util.js.descarga"></script>
 			<script src="./Calculadora _ Asistencia _ Grupo Sur_files/main.js.descarga"></script><section id="menu">
-							<section>
-								<ul class="links">
-									<li>
-										<a href="http://www.gruposur.com/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-											<h3>Grupo Sur</h3>
-											<p>Sitio Corporativo</p>
-										</a>
-									</li>
-									<li>
-										<a href="http://surcolor.com/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-											<h3>Sur Color</h3>
-											<p>Sitio sobre nuestras tiendas</p>
-										</a>
-									</li>
-									<li>
-										<a href="http://www.gruposur.com/web/resp-corporativa/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-											<h3>Responsabilidad Corporativa</h3>
-											<p>Sitio Responsabilidad corporativa</p>
-										</a>
-									</li>									
-								</ul>
-							</section>
+
 					</section>	
 			<script>
 				$( "#calculator" ).click(function() {
@@ -235,7 +219,7 @@
 						var num3 = (eff*10)/col;
 						var num4 = num3*apl
 						var num1 = (num2/num4);
-						var num5 = ((eff-9)*num1)/100;
+						var num5 = ((eff-11)*num1)/100;
 						var num6 = num5*2;
 						
 						
@@ -280,5 +264,24 @@
 				  $('[data-toggle="tooltip"]').tooltip();   
 				});
 			</script>
-	
+	    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Contacto</h4>
+                <p>+591 71271886</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>erickmollisaca@itibb.edu.bo</p>
+            </div>
+            <div class="content-foo">
+                <h4>Localización</h4>
+                <p>Ruta Nacional 2 70, El Alto</p>
+            </div>
+        </div>
+        <h4 class="titulo-final">&copy; Erick Mollisaca | Instituto Tecnológico Industrial Brasil-Bolivia</h4>
+    </footer>
+
+
+
 <div id="imageDownloaderSidebarContainer"><div class="image-downloader-ext-container"><div tabindex="-1" class="b-sidebar-outer"><!----><div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;"><!----><div class="b-sidebar-body"><div></div></div><!----></div><!----><!----></div></div></div></body></html>
